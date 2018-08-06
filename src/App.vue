@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-poc></header-poc>
+    <timer></timer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderPoc from './components/Header.vue'
+import Timer from './components/Timer.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    'header-poc': HeaderPoc,
+    'timer': Timer
   }
 }
 </script>
@@ -23,6 +24,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>
